@@ -1,4 +1,4 @@
-Trial of replicating Google's homepage, in the context of The Odin Project's.
+Trial of replicating Google's homepage, in the context of The Odin Project.
 First project of the curriculum.
 
 This is being written in August, 2, 2021.

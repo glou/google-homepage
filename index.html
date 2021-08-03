@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Google</title>
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <!-- 
+                I'm going to use <nav> tag for top-right menu instead of <div> since it gives semantically value, helping search engines, screen readers and anyone who read the code
+            -->
+            <nav>
+                <span><a href="https://mail.google.com/mail/&ogbl" class="nav-top">Gmail</a></span>
+                <span></span><a href="https://www.google.com/imghp" class="nav-top">Images</a></span>
+                <span></span><a href="https://www.google.com/intl/en/about/products"><img src="images/apps_icon.png"></a></span>
+                <span></span><a href="https://accounts.google.com/ServiceLogin?hl=en">Sign in</a></span>
+            </nav>            
+        </header>
+        <main>
+            <div id="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google logo">
+            </div>
+            <form action="#">
+                <div id="search-box">
+                    <img src="images/magnifying_glass.png">
+                    <input type="text">
+                </div>
+                <div>
+                    <span class="search-buttons"><button type="submit">Google Search</button></span>
+                    <span class="search-buttons"><button type="submit">I'm Feeling Lucky</button></span>
+                </div>
+            </form>            
+            
+        </main>
+        <footer>
+            <!--
+                Same as the top-right menu
+            -->
+            <nav>
+                <a href="https://about.google.com/" class="nav-footer">About</a>
+                <a href="https://ads.google.com/" class="nav-footer">Advertising</a>
+                <a href="https://smallbusiness.withgoogle.com/" class="nav-footer">Business</a>
+                <a href="https://www.google.com/search/howsearchworks/" class="nav-footer"How Search works</a>
+                <a href="https://policies.google.com/privacy" class="nav-footer">Privacy</a>
+                <a href="https://policies.google.com/terms" class="nav-footer">Terms</a>
+                <a href="#" class="nav-footer">Settings</a>
+            </nav>
+        </footer>        
+    </body>
+</html>

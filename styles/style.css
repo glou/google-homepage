@@ -51,3 +51,64 @@
 
 /* End of resetting CSS */
 
+/* Begin of my code */
+
+/* Classes */
+.nav-top-link {
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;
+}
+
+.nav-footer-link {
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    color: #70757a;
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;  
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*
+.search-buttons {
+
+}*/
+
+/* IDs */
+#nav-top {
+    margin: 10px 50px 0px 0px;
+    text-align: right;
+    
+}
+
+#nav-bottom-left {
+    margin: 10px 50px 0px 0px;
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+#nav-bottom-right {
+    margin: 10px 50px 0px 0px;
+    text-align: right;
+    background-color: #f2f2f2;
+}
+
+/* #logo {
+
+
+}
+*/
+
+#search-box {
+    width: 500px;
+    border-width: 1px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:rgb(200, 200, 200);
+    
+}

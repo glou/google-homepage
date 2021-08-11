@@ -185,6 +185,14 @@ a:hover {
     margin-left: 12px;
 }
 
+#button-sign a {
+    text-decoration: none;
+}
+
+#button-sign:hover {
+    background-color: #1a73e8e8;
+}
+
 #logo {    
     margin-top: auto;    
 }

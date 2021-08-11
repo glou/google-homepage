@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
         <title>Google</title>
         
         <link href="styles/style.css" rel="stylesheet">
@@ -10,51 +11,55 @@
     </head>
 
     <body>
-        <header>
-            <!-- 
-                I'm going to use <nav> tag for top-right menu since it gives semantically value, helping search engines, screen readers and anyone who read the code
-            -->
+        <header><!-- I'm going to use <nav> tag for top-right menu since it gives semantically value, helping search engines, screen readers and anyone who read the code  -->
             <nav>
-                <div id="nav-top">
-                    <a href="https://mail.google.com/mail/&ogbl" class="nav-top-link">Gmail</a>
-                    <a href="https://www.google.com/imghp" class="nav-top-link">Images</a>
-                    <a href="https://www.google.com/intl/en/about/products" class="nav-top-link"><img src="images/apps_icon.png"></a>
-                    <a href="https://accounts.google.com/ServiceLogin?hl=en" class="nav-top-link">Sign in</a>
+                <div class="nav-top">
+                    <a href="#">Gmail</a>
+                    <a href="#">Images</a>
+                    <a href="#" id="apps-icon"><img src="images/apps_icon.png"></a>
+                    <a href="#" id="button-sign">Sign in</a>
                 </div>
             </nav>            
         </header>
         <main>
-            <div id="logo">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google logo">
-            </div>
-            <form id="search-form-homepage" action="#">
-                <div id="search-box">
-                    <img src="images/magnifying_glass.png">
-                    <input type="text" name="">
+            <div class="centered-container">
+                <div id="logo">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google logo">
                 </div>
-                <div>
-                    <span class="search-buttons"><button type="submit">Google Search</button></span>
-                    <span class="search-buttons"><button type="submit">I'm Feeling Lucky</button></span>
+                <div id="search-form-homepage">
+                    <form action="#">
+                        <div id="search-box-container">
+                            <img style="width: 19px; height: 19px; margin: 9px 10px 5px;" src="images/magnifying_glass.png">
+                            <input type="text" id="search-box" name="">                            
+                        </div>
+                        <div id="search-links">
+                            <input type="submit" class="search-buttons" name="google-search" value="Google Search">
+                            <input type="submit" class="search-buttons" name="feeling-lucky" value="I'm Feeling Lucky">
+                        </div>                        
+                    </form>
+                    
                 </div>
-            </form>     
+                 
+                </form>            
+            </div>            
         </main>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <footer>
-            <!--
-                Same as the top-right menu
-            -->
+        <footer><!-- Same as the top-right menu -->
             <nav>
-                <div id="nav-bottom-left">
-                    <a href="https://about.google.com/" class="nav-footer-link">About</a>
-                    <a href="https://ads.google.com/" class="nav-footer-link">Advertising</a>
-                    <a href="https://smallbusiness.withgoogle.com/" class="nav-footer-link">Business</a>
-                    <a href="https://www.google.com/search/howsearchworks/" class="nav-footer-link">How Search works</a>
-                </div>
-                <div id="nav-bottom-right">
-                    <a href="https://policies.google.com/privacy" class="nav-footer-link">Privacy</a>
-                    <a href="https://policies.google.com/terms" class="nav-footer-link">Terms</a>
-                    <a href="#" class="nav-footer-link">Settings</a>
-                </div>
+                <div class="nav-bottom">                    
+                        <div class="nav-bottom-left">
+                            <a href="#">About</a>
+                            <a href="#">Advertising</a>
+                            <a href="#">Business</a>
+                            <a href="#">How Search works</a>
+                        </div>
+                        <div class="nav-bottom-middle"></div>
+                        <div class="nav-bottom-right">
+                            <a href="#">Privacy</a>
+                            <a href="#">Terms</a>
+                            <a href="#">Settings</a>
+                        </div>
+                    
+                </div>                
             </nav>
         </footer>        
     </body>

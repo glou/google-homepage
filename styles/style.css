@@ -53,17 +53,29 @@
 
 /* Begin of my code */
 
+/* The code which follow is to exclude margins in the computation of lenghts */
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 
+/* The following rule enables me to define a height for the middle container using percentage */
+
 html {
     height: 100%;
 }
 
-/* Classes */
+/* -- Classes -- */
+
+/* Universal style for all the navigation links */
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Classes for the top navigation bar */
 
 .nav-top {
     display: flex;
@@ -83,6 +95,8 @@ html {
     margin: 0px 5px 0px 5px;
 }
 
+/* Class for the middle container */
+
 .centered-container {
     display: flex;
     flex-direction: column;  
@@ -91,6 +105,8 @@ html {
     height: 80%;
     position: absolute;    
 }
+
+/* Classes for the bottom navigation bar */
 
 .nav-bottom {
     display: flex;
@@ -124,20 +140,14 @@ html {
     flex-shrink: 3;
 }
 
-.nav-bottom-left a{
+.nav-bottom-left a {
     margin-right: 18px;
     flex-shrink: 1;
-
 }
 
-.nav-bottom-right a{
+.nav-bottom-right a {
     margin-left: 18px;
     flex-shrink: 1;
-
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 .search-buttons {
@@ -155,7 +165,9 @@ a:hover {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2)
 }
 
-/* IDs */
+/* IDs
+   I probably shouldn't use so many IDs in a webpage as simple as this, but I chose to keep this way since these styles are really specific
+*/
 
 #apps-icon {
     align-self: center;
@@ -226,5 +238,4 @@ a:hover {
     margin: 40px auto;
     padding-left: 40vw;
     padding-right: 40vw;
-
 }
